@@ -32,7 +32,7 @@ if resp == '+':
 
 elif resp == '-':
     resultado = num1 - num2
-    print(f"A subtração de {num1} e {num2} = {resultado}")
+    print(f"A subtração: {num1} e {num2} = {resultado}")
     checar()
 
 elif resp == '*':
