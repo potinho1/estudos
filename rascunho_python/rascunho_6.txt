@@ -1,0 +1,16 @@
+Dicionários armazenam um conjunto de informações que tenham correspondência em pares.
+
+Exemplo:
+    palavra | significado
+    pessoa | cores favoritas
+    marca | modelo
+
+    Keys | Values
+
+keys: Precisam ser de um tipo imutável (int, float, strings, etc...) os keys não podem ser alterados.
+Values: Podem ser qualquer objeton mutável ou imutável.
+------------------------------------------------------------------------------------------------------>
+Se você usa uma mesma key mais de uma vez, o valor associado a ela é simplemente substítuido
+-------------------------------------------------------------------------------------------->
+
+ANINHAMENTO:  Podemos criar lista de dicionários, armazenar listas como valores de dicionários, podemos aninhas dicionários dentro de outro. Esses são apenas alguns exemplos de aninhamento.

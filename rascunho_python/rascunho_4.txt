@@ -1,0 +1,9 @@
+for = para cada
+exemplo:
+    contas = ['luz', 'agua']
+
+    for conta in contas:
+        print(conta)
+    
+    resposta = luz
+               agua

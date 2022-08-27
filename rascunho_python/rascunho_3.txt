@@ -1,0 +1,37 @@
+Listas Python
+----------------------------------------------------------------------------------------------------------->
+Em Python, list é uma estrutura de dados utilizada para armazenar elementos de forma sequencial e ordenada
+------------------------------------------>
+Definição: é uma coleção ordenada de itens
+-------------------------------------------->
+cirar uma lista:
+    my_list = [var1, var2, var3]
+
+----------------------------------->
+
+Uma lista dentro de outra lista, são listas aninhadas.
+
+-------------------------------------------------------->
+
+Contagem no python começa com o 0
+
+Contagem de trás para frente começa no -1
+
+------------------------------------>
+
+Listas são mutáveis (podem ser alteradas depois de criadas)
+
+-------------------------------------------------------------->
+
+Quando não passamos nenhum valor para o metodo .pop() ele exclui
+o ultimo valor
+
+O .remove() remove o primeiro valor
+
+------------------------------------------------------------------->
+
+O metodo .append() adiciona a lista inteira, já o .extend() adiciona os elementos um a um
+
+------------------------------------------------------------------------------------------->
+
+O metodo .sorted() altera a ordem da lista

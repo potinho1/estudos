@@ -1,0 +1,7 @@
+Loop while 
+
+for loop VS while loop 
+
+For: Repete um mesmo conjunto de ações em todos os elementos de uma sequência
+while: Repete um mesmo conjunto de ações enquanto uma condição é verdadeira
+------------------------------------------------------------------------------>

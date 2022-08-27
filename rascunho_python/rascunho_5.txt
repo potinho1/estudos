@@ -1,0 +1,7 @@
+Teste condicional é uma expressão que retorna True ou False
+----------------------------------------------------------->
+= : Operador de atribuição
+== : Operador de igualdade
+-------------------------->
+
+Lista vazia sempre vai cair no else, se ele tiver algum elemento ela cai no if. 

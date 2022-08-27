@@ -1,0 +1,42 @@
+--------------------------------------->
+
+variáveis podem conter letras de A a Z,
+números de 0 a 9 e _.
+
+--------------------------------------->
+
+O primeiro catacter tem que ser uma letra ou o sublinhado (_).
+
+-------------------------------------------------------------->
+
+Nomes ilegais de variáveis:
+    2myvar = "joao"
+    my-var = "joao"
+    my var = "joao"
+
+--------------------------------------------------------------->
+
+Cuidado com as palavras especiais do python, não colocar como variáveis.
+
+----------------------------------------------------------------------->
+
+Dar um nome curto e significativo para variáveis.
+
+------------------------------------------------->
+
+Utilizar apenas letras minúsculas em variáveis.
+
+--------------------------------->
+
+STRINGS:
+    "Isso é uma string"
+    'Isso também é uma string'
+
+------------------------------->
+
+Remover os espaços em branco de string:
+    .lstrip() - remove os espaços da esquerda
+    .rsrtip() - remove os espaços da direita
+    .strip() - remove de almbos os lados
+
+---------------------------------------------->
