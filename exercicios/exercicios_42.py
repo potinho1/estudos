@@ -17,22 +17,20 @@ if tipo_combustivel == 'A':
     pergunta = int(input("Quantos litros de álcool deseja colocar? "))
     if pergunta <= 20:
         soma_litros = (pergunta * alcool)
-        desconto = (soma_litros * 0.04) - soma_litros
+        desconto = (soma_litros * 0.3) - soma_litros
         print(f"Total a pagar {desconto}")
     elif pergunta > 21:
         soma_litros = (pergunta * alcool)
-        desconto = (soma_litros * 0.06)
-        valor = desconto - soma_litros
-        print(f"Total a pagar {valor}")
+        desconto = (soma_litros * 0.05) - soma_litros
+        print(f"Total a pagar {desconto}")
 
 if tipo_combustivel == 'G':
     pergunta = int(input("Quantos litros de gasolina deseja colocar? "))
     if pergunta <= 20:
         soma_litros = (pergunta * gasolina)
-        desconto = (soma_litros * 0.03) - soma_litros
+        desconto = (soma_litros * 0.04) - soma_litros
         print(f"Total a pagar {desconto}")
     elif pergunta > 21:
         soma_litros = (pergunta * gasolina)
-        desconto = (soma_litros * 0.05)
-        valor = desconto - soma_litros
-        print(f"Total a pagar {valor}")
+        desconto = (soma_litros * 0.06) - soma_litros
+        print(f"Total a pagar {desconto}")
