@@ -1,5 +1,5 @@
-'''resultado = 5 + 5
-mensagem = "Eu gosto de Python"
+'''resultado = 5 + 5 
+mensagem = "Eu gosto de Python'
 
 print(resultado)
 print(mensagem)
