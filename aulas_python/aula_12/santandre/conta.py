@@ -1,10 +1,10 @@
 class ContaCorrente:
     """ Classe para representar uma conta corrente"""
 
-    def __init__(self, cliente, num_saldo, saldo=0, extrado=[]):
+    def __init__(self, cliente, num_conta, saldo=0, extrado=[]):
         """ Inicializa os atributos da conta corrente"""
         self.cliente = cliente
-        self.num_saldo = num_saldo
+        self.num_conta = num_conta
         self.saldo = saldo
         self.extrato = extrado
 
@@ -38,4 +38,4 @@ class ContaCorrente:
             else:
                 print(f"Saque        {operacao}R$")
         print("_"*20)
-        print(f"Total            {self.saldo}\n")
+        print(f"Total            {self.saldo}R$\n")
