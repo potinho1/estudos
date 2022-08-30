@@ -92,3 +92,7 @@ class MinhaAgenda:
                     break
             else:
                 print("Insira um comando válido!\n")
+
+
+agenda = MinhaAgenda()
+agenda.run()
