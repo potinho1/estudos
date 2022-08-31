@@ -1,6 +1,3 @@
-from mailbox import NotEmptyError
-
-
 class Contato:
     """ Representa um contato"""
 
