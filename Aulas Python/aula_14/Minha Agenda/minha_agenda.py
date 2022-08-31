@@ -4,9 +4,15 @@ from contato import Contato
 class MinhaAgenda:
     """ Representa uma agenda de contatos telefônicos"""
 
-    def __init__(self, contatos=[]):
+    def __init__(self, contatos_dict=[]):
         """ Inicializa os atributos da agenda"""
-        self.contatos = contatos
+        self.contatos = []
+        if contatos_dict:
+            for contato_dict in contatos_dict:
+                contato = Contato(
+                    contato_dict['nome'], contato_dict['telefone'])
+                self.contatos.append(contato)
+        self.contatos_dict = []
 
     def ver_contatos(self):
         """ Mostra a lista de contatos"""
@@ -72,6 +78,11 @@ class MinhaAgenda:
         else:
             print("Não há contatos armazenados na agenda.\n")
 
+    def criar_contatos_dict(self):
+        for contato in self.contatos:
+            contato_dict = contato.__dict__
+            self.contatos_dict.append(contato_dict)
+
     def run(self):
         """ Inicia a operação da agenda"""
         print("MINHA AGENDA")
@@ -89,10 +100,7 @@ class MinhaAgenda:
                     self.editar_contato()
                 else:
                     print("Até a próxima!")
+                    self.criar_contatos_dict()
                     break
             else:
                 print("Insira um comando válido!\n")
-
-
-agenda = MinhaAgenda()
-agenda.run()
