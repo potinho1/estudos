@@ -11,4 +11,4 @@ for i in range(10):
     resultado.append(vetor2[i])
     resultado.append(vetor3[i])
 
-print(resultado)
+print(f"3 Lista de vetores intercalados: {resultado}")
