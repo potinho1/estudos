@@ -13,43 +13,14 @@
 #$1000 em diante
 #Desafio: Crie ma fórmula para chegar na posição da lista a partir do salário, sem fazer vários ifs aninhados.
 
-l = [0,0,0,0,0,0,0,0,0]
-x=0
-
-while True:
-    n = float(input("Informe seu salário %dº R$:" %(x+1)))
-    if 200 < n <299:
-        l[0]+=1
-    elif 300 < n > 399:
-        l[1]+=1
-    elif 400 < n > 499:
-        l[2]+=1
-    elif 500 < n > 599:
-        l[3]+=1
-    elif 600 < n > 699:
-        l[4]+=1
-    elif 700 < n > 799:
-        l[5]+=1
-    elif 800 < n > 899:
-        l[6]+=1
-    elif 900 < n > 999:
-        l[7]+=1
-    elif n >= 1000:
-        l[8]=[8]+1
-    x+=1
-    d = input('deseja continuar?(s ou n)')
-    if d == 'n':
-        break
-    print(l[0])
-
 """
 
-num_vendedores = int(input('Quantos vendedores a loja tem? '))
+num_vendedores = int(input("Quantos vendedores a loja tem? "))
 
 salarios = []
 classe = []
 for vendedor in range(1,num_vendedores+1):
-    vendas = float(input('\nQuanto o vendedor '+str(vendedor)+' arrecadou essa semana? '))
+    vendas = float(input(f"\nQuanto o vendedor {vendedor} arrecadou essa semana? "))
     salarios.append(200+(vendas*0.09))
 
 dicionario = {'1':[range(200,300),0],'2':[range(300,400),0],
@@ -62,16 +33,15 @@ dicionario = {'1':[range(200,300),0],'2':[range(300,400),0],
 for salario in salarios:
     print(salario)
     for idx in dicionario.keys():
-        print(idx)
         if salario in dicionario[idx][0]:
             classe.append(idx)
             dicionario[idx][1] = dicionario[idx][1] + 1     
             
-#for idx in dicionario.keys():
-#    inicial = dicionario[idx][0][0]
-#    final = dicionario[idx][0][-1]
-#    quant = dicionario[idx][1]
-#    if final == 99999:
-#        print('Número de funcionários com salário acima de R$1000,00 iguai a '+str(quant))
-#    else:
-#        print('Nuúmero de funcionários com salário de R$'+str(inicial)+ ' a R$'+str(final)+' igual a: '+str(quant))
+for idx in dicionario.keys():
+    inicial = dicionario[idx][0][0]
+    final = dicionario[idx][0][-1]
+    quant = dicionario[idx][1]
+    if final == 99999:
+        print('Número de funcionários com salário acima de R$1000,00 iguai a '+str(quant))
+    else:
+        print('Nuúmero de funcionários com salário de R$'+str(inicial)+ ' a R$'+str(final)+' igual a: '+str(quant))
